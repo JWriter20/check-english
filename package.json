@@ -16,7 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "if [ -z \"$SKIP_TESTS\" ]; then npm test; fi",
+    "release": "npm test && SKIP_TESTS=1 npm version patch && SKIP_TESTS=1 npm publish"
   },
   "keywords": [
     "english",
