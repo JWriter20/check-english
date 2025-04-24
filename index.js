@@ -23,7 +23,7 @@ const englishWords = new Set(englishWordArray);
  * 
  * @note Returns false for empty texts or texts containing no valid words
  */
-export function isEnglish(text, threshold) {
+export function isEnglish(text, threshold = 0.4) {
     // Convert to lowercase for case-insensitive matching
     const lowerText = text.toLowerCase();
 
