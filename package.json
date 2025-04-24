@@ -1,0 +1,20 @@
+{
+  "name": "check-english",
+  "version": "1.0.0",
+  "description": "For checking if a given string is english",
+  "homepage": "https://github.com/JWriter20/check-english#readme",
+  "bugs": {
+    "url": "https://github.com/JWriter20/check-english/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWriter20/check-english.git"
+  },
+  "license": "ISC",
+  "author": "Jake Writer",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
