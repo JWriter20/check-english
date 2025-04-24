@@ -1,7 +1,7 @@
 {
   "name": "check-english",
   "version": "1.0.0",
-  "description": "For checking if a given string is english",
+  "description": "Determine if a string contains English words based on a list of 5,000 common words",
   "homepage": "https://github.com/JWriter20/check-english#readme",
   "bugs": {
     "url": "https://github.com/JWriter20/check-english/issues"
@@ -10,11 +10,28 @@
     "type": "git",
     "url": "git+https://github.com/JWriter20/check-english.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Jake Writer",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "english",
+    "language detection",
+    "word check",
+    "text analysis"
+  ],
+  "files": [
+    "index.js",
+    "words.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
